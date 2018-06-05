@@ -145,7 +145,7 @@
 					$('#node-input-password').val('');
 				}
 			});
-			if (this.credentials.user || this.credentials.has_password) {
+			if (this.credentials && (this.credentials.user || this.credentials.has_password)) {
 				$('#node-input-useAuth').prop('checked', true);
 			} else {
 				$('#node-input-useAuth').prop('checked', false);
